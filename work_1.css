@@ -1,0 +1,214 @@
+/* CSS */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded');
+/* ==========  基本設定 (PC)  ========== */
+/* ##########  body設定  ########## */
+body {
+    background-color: rgb(215, 215, 215);
+}
+/* ##########  container設定  ########## */
+.container {
+    background-color: white;
+    margin-top: 30px;
+    padding-top: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* ##########  header設定  ########## */
+#header {
+    color: black;
+    padding: 20px;
+    padding-left: 100px;
+}
+.header_title {
+    font-size: 20px;
+}
+.header_text {
+    margin: 0; /* マージンを0にして余白を削除 */
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0 0 8px black;
+}
+/* ##########  work_header設定  ########## */
+.work_header {
+    position: relative; /* .container に対する相対位置を設定 */
+}
+.work_title {
+    display: inline-block;
+}
+.work_text {
+    font-size: 37px;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 0 0 5px black;
+}
+.underline {
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid black;
+    padding-bottom: 1px;
+}
+.work_subtitle {
+    margin-top: 10px;
+}
+.work_subtext {
+    font-size: 15px;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 0 0 1px black;
+}
+/* ##########  work_1設定  ########## */
+.first {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.first_text {
+    color: black;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-shadow: 0 0 1px black;
+    width: 49%; /* 左側のテキスト領域の幅を設定 */
+}
+.first_img {
+    width: 49%; /* 右側の画像領域の幅を設定 */
+}
+.first_img img {
+    max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+    height: auto; /* アスペクト比を維持しつつ、高さを自動調整 */
+}
+/* ##########  work_2設定  ########## */
+.mokuzi {
+    border: 2px solid black;
+    padding: 15px; /* コンテンツと枠線の間に余白を作成 */
+    box-shadow: 0 0 15px black inset;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.mokuzi_name {
+    padding-top: 10px;
+    padding-left: 40px;
+    color: black;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 20px;
+    text-shadow: 0 0 8px black;
+}
+.mokuzi_text {
+    padding-left: 60px;
+    color: black;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-shadow: 0 0 8px black;
+}
+.link_1 {
+    text-decoration: none;
+    margin: 0 15px; /* リンク間の余白を設定 */
+    color: black;
+    transition: color 0.3s; /* カラー変更にアニメーションを追加 */
+}
+.link_1:hover {
+    color:crimson;
+    text-shadow: 0 0 8px crimson;
+    cursor: pointer;
+}
+.link_2 {
+    text-decoration: none;
+    padding-left: 40px;
+    margin: 0 15px; /* リンク間の余白を設定 */
+    color: black;
+    transition: color 0.3s; /* カラー変更にアニメーションを追加 */
+}
+.link_2:hover {
+    color: dodgerblue;
+    text-shadow: 0 0 8px dodgerblue;
+    cursor: pointer;
+}
+/* ##########  all_text . part設定  ########## */
+.all_text {
+    color: black;
+    text-shadow: 0 0 1px black;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+.part {
+    color: black;
+    text-shadow: 0 0 5px black;
+    font-size: 25px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding-left: 20px;
+}
+/* ##########  work_1_1設定  ########## */
+.first_work_title {
+    color:crimson;
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-shadow: 0 0 15px crimson;
+}
+.first_work_subtitle_1 {
+    color:dodgerblue;
+    font-size: 25px;
+    margin-top: 80px;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-shadow: 0 0 8px dodgerblue;
+}
+.arrangement {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.sheet {
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    background-color:khaki;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.all_code {
+    color:black;
+    text-shadow: 0 0 1px black;
+    font-family: 'Exo 2', sans-serif;
+}
+.code_name {
+    color: black;
+    text-shadow: 0 0 1px black;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+.work_images {
+    width: 40%;
+    max-width: 50%;
+    border: 2px solid black;
+    padding: 15px;
+}
+.images {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* 左右のマージンを自動で中央にする */
+    display: block; /* ブロック要素として表示 */
+}
+/* ##########  work_1_2設定  ########## */
+.second_work_title {
+    color: crimson;
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-shadow: 0 0 15px crimson;
+}
+/* ##########  work_1_3設定  ########## */
+.third_work_title {
+    color: crimson;
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-shadow: 0 0 15px crimson;
+}
+/* ##########  work_1_4設定  ########## */
+.fourth_work_title {
+    color: crimson;
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-shadow: 0 0 15px crimson;
+}
